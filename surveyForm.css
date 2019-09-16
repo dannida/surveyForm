@@ -1,0 +1,63 @@
+.btn:hover {
+    background-position: right center; /* change the direction of the change here */
+  }
+
+#jumbotron {
+    background-image: linear-gradient(to bottom, rgb(94, 228, 94), rgb(0, 68, 0));
+    color: white;
+    align-content: center;
+}
+
+.detailsContainer {
+    background-color: lightgrey;
+    box-shadow: 10px 10px 5px #888888;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 8%;
+    padding-right: 8%;
+    padding-top: 6%;
+    padding-bottom: 3%;
+}
+
+.align {
+    padding-left: 8%;
+}
+
+#radioDiv {
+    padding-left: 5%;
+}
+
+#radioCheckContainer {
+    margin-top: -6.5%;
+}
+
+#suggestDiv {
+    margin-top: -6.5%;
+}
+
+#textArea {
+    padding: -9%;
+}
+
+#button {
+    margin-top: -7%; 
+    margin-left: 8%;
+    margin-right: 8%;   
+      
+}
+
+#submit {    
+    padding: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+    font-size: 3rem;
+    border-radius: 30%;
+   }
+
+   

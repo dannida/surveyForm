@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="surveyForm.css">
+    <title>freecodecamp survey form</title>
+</head>
+
+<body>
+    <!--The topic page using bootstrap's jumbotron-->
+    <div class="jumbotron text-center" id="jumbotron">
+        <h1 id="title" class="display-3 font-weight-bold">MPOHOR SENIOR HIGH SCHOOL SURVEY FORM</h1>
+        <hr class="my-2">
+        <p id="description" class="lead">THIS IS TO IMPROVE THE TEACHING AND LEARNING PROCESS IN OUR GREAT INSTITUTION</p>
+    </div>
+
+    <!--boostrap's container.. allows for a more responsive page-->
+    <div class="container-fluid">
+        <div id="formBigContainer">
+            <!--contains the entire form-->
+            <form id="survey-form" class="need-validation">
+                <!--container for name, email, number group-->
+                <div class="detailsContainer">
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label col-form-label-lg align" for="name" id="name-label">Name: </label>
+                        <div class="col-sm-10">
+                            <input class="form-control form-control-lg" type="text" placeholder="Enter your name" name="name" id="name" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label col-form-label-lg align" for="email" id="email-label">Email: </label>
+                        <div class="col-sm-10">
+                            <input class="form-control form-control-lg" type="email" placeholder="Enter your email" name="email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label col-form-label-lg align" for="number" id="number-label">Form: </label>
+                        <div class="col-sm-10">
+                            <input class="form-control form-control-lg" type="number" placeholder="Enter your class" name="number" id="number" max="3" min="1">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label col-form-label-lg align" for="dropdown" id="portfolio-label">Portfolio: </label>
+                        <div class="col-auto">
+                            <select class="form-control form-control-lg" name="dropdown" id="dropdown">
+                                <option value="1">SNR PREFECT</option>
+                                <option value="2">ASS SNR PREFECT</option>
+                                <option value="3">D-HALL PREFECT</option>
+                                <option value="4">G-PREFECT</option>
+                                <option value="5">SPORTS PREFECT</option>
+                                <option value="6">ENT. PREFECT</option>
+                                <option value="7">LIBRARY PREFECT</option>
+                                <option value="8">CLASS REP</option>
+                                <option value="9">PROTOCOL</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!--container for radio and checkbox-->
+                <div class="detailsContainer row" id="radioCheckContainer">
+                    <div class="col-md-6" id="radioDiv">
+                        <span>Best teacher</span>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" value="radio1">
+                            <label class="custom-control-label" for="customRadio1">Mr. Zoe</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" value="radio2">
+                            <label class="custom-control-label" for="customRadio2">Mr. Doi</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" value="radio3">
+                            <label class="custom-control-label" for="customRadio3">Mis. Dehar</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input" value="radio4">
+                            <label class="custom-control-label" for="customRadio4">Mis. Anaman</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio5" name="customRadio" class="custom-control-input" value="radio5">
+                            <label class="custom-control-label" for="customRadio5">Mr. Blay</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio6" name="customRadio" class="custom-control-input" value="radio6">
+                            <label class="custom-control-label" for="customRadio6">Mr. Trans</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" id="checkboxDiv">
+                        <span>Best Subjects</span>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1" value="check1">
+                            <label class="custom-control-label" for="customCheck1">Maths</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck2" value="check2">
+                            <label class="custom-control-label" for="customCheck2">English</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck3" value="check3">
+                            <label class="custom-control-label" for="customCheck3">Int. Science</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck4" value="check4">
+                            <label class="custom-control-label" for="customCheck4">Biology</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck5" value="check5">
+                            <label class="custom-control-label" for="customCheck5">Social Studies</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck6" value="check6">
+                            <label class="custom-control-label" for="customCheck6">ICT</label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="detailsContainer" id="suggestDiv">
+                    <div class="form-group row">
+                        <label class="col-md-2 col-form-label-lg" for="suggestionArea">Suggestion: </label>
+                        <div class="col-md-10" id="textArea">
+                            <textarea class="form-control form-control-lg" id="suggestionArea" rows="4" placeholder="Enter your suggestion here"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mb-3" id="button">
+                    <button type="submit" class="btn btn-rounded btn-block" id="submit">Submit</button>
+                </div>
+
+            </form>
+        </div>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
